@@ -75,3 +75,89 @@ body {
 }
 
 /* ...existing code... */
+
+
+
+.nav-footer a,
+.nav-footer a:visited,
+.nav-footer a:hover,
+.nav-footer a:focus,
+.nav-footer a:active {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-bottom: 8px;
+    margin-right: 12px;
+    font-size: 10px;
+}
+
+.nav-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-footer a:hover,
+.nav-footer a:focus {
+    color: #fff !important;
+}
+
+.popular-artists {
+    padding: 24px;
+}
+
+.popular-artists h2 {
+    margin: 24px 0 12px;
+    font-size: 24px;
+}
+
+.artists-grid,
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.card-item {
+    background: #181818;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    background: #282828;
+}
+
+.card-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 12px;
+}
+
+.card-info h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.card-info p {
+    margin: 0 0 8px;
+    color: #b3b3b3;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.card-info span {
+    color: #1DB954;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
